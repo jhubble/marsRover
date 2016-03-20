@@ -27,16 +27,20 @@ To use as API, use `rover.js` script.
 Call `MarsRover.processRover(string)` where string contains the entire input text (with newlines dividing individual lines.) The output lines will be returned.
 
 ## Example
+
 Input: 
+```
 5 5 
 1 2 N 
 LMLMLMLMM 
 3 3 E 
 MMRMMRMRRM 
-
-Output: 
+```
+Output:
+```
 1 3 N 
 5 1 E
+```
 # Future work 
 * More extensive tests
 * Better error checking
