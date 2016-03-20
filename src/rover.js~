@@ -114,10 +114,12 @@ var MarsRover = {
     },
 
     isInvalidPosition: function(position, plateauSize) {
+        console.log(position, plateauSize);
         if (position.x < 0 ||
             position.y < 0 ||
             position.x > plateauSize.x ||
             position.y > plateauSize.y) {
+            console.log("bad");
             return true;
         } else {
             return false;
@@ -134,6 +136,7 @@ var MarsRover = {
             x: startPosition[0],
             y: startPosition[1]
         };
+        console.log(position, plateauSize);
         if (this.isInvalidPosition(position, plateauSize)) {
             return "ERROR: rover starting off the plateau!";
         }
